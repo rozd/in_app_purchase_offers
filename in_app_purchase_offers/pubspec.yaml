@@ -1,0 +1,26 @@
+name: in_app_purchase_offers
+description: Extension for in_app_purchase plugin for working with offers
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: '>=3.1.4 <4.0.0'
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  in_app_purchase: any
+  in_app_purchase_storekit: any
+  in_app_purchase_android: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  generate: true

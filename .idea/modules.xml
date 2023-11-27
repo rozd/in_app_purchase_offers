@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/in_app_purchase_offers/in_app_purchase_offers.iml" filepath="$PROJECT_DIR$/in_app_purchase_offers/in_app_purchase_offers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/in_app_purchase_offers_example/in_app_purchase_offers_example.iml" filepath="$PROJECT_DIR$/in_app_purchase_offers_example/in_app_purchase_offers_example.iml" />
+    </modules>
+  </component>
+</project>

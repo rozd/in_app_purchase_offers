@@ -1,0 +1,110 @@
+{
+  "introFreeTrialPrefix": "Start with ",
+  "introPayAsYouGoPrefix": "Start at ",
+  "introPayUpFrontPrefix": "Start with a budget of ",
+
+  "promoFreeTrialPrefix": "Try us with ",
+  "promoPayAsYouGoPrefix": "Start at ",
+  "promoPayUpFrontPrefix": "Pay only ",
+
+  "freeTrial": "free trial",
+
+  "wordThen": "then",
+  "wordPer": "per",
+  "wordFor": "for",
+
+  "day": "day",
+  "week": "week",
+  "month": "month",
+  "year": "year",
+
+  "nDaysInSentence": "{count, plural, =1{an one day} other{a {count} days}}",
+  "@nDaysInSentence": {
+    "description": "Label for the number of days",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "nWeeksInSentence": "{count, plural, =1{an one week} other{a {count} weeks}}",
+  "@nWeeksInSentence": {
+    "description": "Label for the number of weeks",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "nMonthsInSentence": "{count, plural, =1{an one month} other{a {count} months}}",
+  "@nMonthsInSentence": {
+    "description": "Label for the number of months",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "nYearsInSentence": "{count, plural, =1{an one year} other{a {count} years}}",
+  "@nYearsInSentence": {
+    "description": "Label for the number of years",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+
+  "nDays": "{count, plural, =1{one day} other{{count} days}}",
+  "@nDays": {
+    "description": "Label for the number of days",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "nWeeks": "{count, plural, =1{one week} other{{count} weeks}}",
+  "@nWeeks": {
+    "description": "Label for the number of weeks",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "nMonths": "{count, plural, =1{one month} other{{count} months}}",
+  "@nMonths": {
+    "description": "Label for the number of months",
+    "type": "text",
+    "placeholders": {
+      "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  },
+  "nYears": "{count, plural, =1{one year} other{{count} years}}",
+  "@nYears": {
+    "description": "Label for the number of years",
+    "type": "text",
+    "placeholders": {
+    "count": {
+        "type": "num",
+        "format": "compact"
+      }
+    }
+  }
+}
