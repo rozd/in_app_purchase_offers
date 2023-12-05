@@ -1,7 +1,7 @@
 name: in_app_purchase_offers
 description: Extension for in_app_purchase plugin for working with offers 
   (discounts) in iOS and Android.
-version: 0.0.3
+version: 0.4.0
 homepage: https://pub.dev/packages/in_app_purchase_offers
 
 environment:
