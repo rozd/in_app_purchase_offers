@@ -99,10 +99,10 @@ packages:
   in_app_purchase_offers:
     dependency: "direct main"
     description:
-      path: "../in_app_purchase_offers"
+      path: ".."
       relative: true
     source: path
-    version: "0.0.1"
+    version: "0.0.3"
   in_app_purchase_platform_interface:
     dependency: transitive
     description:
