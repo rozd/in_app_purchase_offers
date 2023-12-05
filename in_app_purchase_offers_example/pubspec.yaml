@@ -1,8 +1,8 @@
 name: in_app_purchase_offers_example
-description: A new Flutter project.
-publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+description: An example of how to use in_app_purchase_offers.
+publish_to: 'none'
 
-version: 1.0.0+2
+version: 1.0.0+3
 
 environment:
   sdk: '>=3.1.4 <4.0.0'

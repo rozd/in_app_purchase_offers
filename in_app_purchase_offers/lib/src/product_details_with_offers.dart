@@ -1,7 +1,7 @@
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'offer.dart';
 
-class ProductDetailsWithOffers implements ProductDetails {
+abstract class ProductDetailsWithOffers implements ProductDetails {
   final ProductDetails origin;
 
   final Offer? introductoryOffer;

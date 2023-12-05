@@ -8,7 +8,13 @@ const kGoldMonthly    = 'test.gold';
 
 class Store {
 
-  Store();
+  Store() {
+    InAppPurchaseOffers.configure(
+      googlePlayIntroductoryOfferIds: {
+        'silver-monthly-introductory-free-trial'
+      }
+    );
+  }
 
   Future dispose() async {
     _products?.close();

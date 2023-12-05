@@ -1,7 +1,6 @@
-
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 
-import '../../offer.dart';
+import '../offer.dart';
 
 extension SKProductDiscountWrapperSerialization on SKProductDiscountWrapper {
 

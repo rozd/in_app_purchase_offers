@@ -1,12 +1,12 @@
 import 'package:in_app_purchase_storekit/store_kit_wrappers.dart';
 
-import '../../offer.dart';
+import '../offer.dart';
 import 'serialization.dart';
 
-class StoreKitOffer extends Offer {
+class AppStoreOffer extends Offer {
   final SKProductDiscountWrapper discount;
 
-  StoreKitOffer({
+  AppStoreOffer({
     required this.discount,
   }) : super(
     id: OfferId.fromValue(discount.identifier),

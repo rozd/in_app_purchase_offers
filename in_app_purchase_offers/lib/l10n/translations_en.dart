@@ -4,7 +4,10 @@ import 'package:intl/intl.dart' as intl;
 
 import 'translations.dart';
 
-/// The translations for English (`en`).
+/// Default implementation of [Translations] for the `en` locale.
+///
+/// This file generated from the `./assets/l10n/in_app_purchase_offers_en.arb`
+/// file.
 class TranslationsEn extends Translations {
   TranslationsEn([String locale = 'en']) : super(locale);
 

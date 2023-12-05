@@ -1,6 +1,5 @@
 import 'package:flutter/widgets.dart';
 import 'package:in_app_purchase_offers/in_app_purchase_offers.dart';
-import 'package:in_app_purchase_offers/l10n/translations.dart';
 import 'package:in_app_purchase_offers/l10n/translations_en.dart';
 
 extension OfferForDisplay on Offer {

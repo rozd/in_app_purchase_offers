@@ -1,10 +1,7 @@
 import 'package:in_app_purchase/in_app_purchase.dart';
 import 'package:in_app_purchase_android/in_app_purchase_android.dart';
-import 'package:in_app_purchase_offers/src/android/impl/billing_client_offer.dart';
 
 import '../../in_app_purchase_offers.dart';
-
-const googlePlayIntroductoryOfferIds = { 'silver-monthly-introductory-free-trial' };
 
 Iterable<ProductDetailsWithOffers> mapper(Iterable<ProductDetails> products) {
   final map = products
@@ -20,8 +17,8 @@ Iterable<ProductDetailsWithOffers> mapper(Iterable<ProductDetails> products) {
 
 ProductDetailsWithOffers? _mapProduct({required String productId, required List<GooglePlayProductDetails> products}) {
   late final GooglePlayProductDetails basePlanProduct;
-  List<BillingClientOffer> introductoryOffers = [];
-  List<BillingClientOffer> promotionalOffers = [];
+  List<GooglePlayOffer> introductoryOffers = [];
+  List<GooglePlayOffer> promotionalOffers = [];
   for (final product in products) {
     final index = product.subscriptionIndex;
     if (index == null) {
@@ -35,9 +32,9 @@ ProductDetailsWithOffers? _mapProduct({required String productId, required List<
       basePlanProduct = product;
       continue;
     }
-    if (googlePlayIntroductoryOfferIds.contains(offer.offerId)) {
+    if (InAppPurchaseOffers.googlePlayIntroductoryOfferIds.contains(offer.offerId)) {
       introductoryOffers.add(
-        BillingClientOffer(
+        GooglePlayOffer(
           product: product,
           offer: offer,
           type: OfferType.introductory,
@@ -46,7 +43,7 @@ ProductDetailsWithOffers? _mapProduct({required String productId, required List<
       continue;
     }
     promotionalOffers.add(
-      BillingClientOffer(
+      GooglePlayOffer(
         product: product,
         offer: offer,
         type: OfferType.promotional,
@@ -54,7 +51,7 @@ ProductDetailsWithOffers? _mapProduct({required String productId, required List<
     );
   }
 
-  return ProductDetailsWithOffers(
+  return GooglePlayProductDetailsWithOffers(
     origin: basePlanProduct,
     introductoryOffer: introductoryOffers.firstOrNull,
     promotionalOffers: promotionalOffers,

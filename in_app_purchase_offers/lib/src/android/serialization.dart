@@ -1,6 +1,6 @@
 import 'package:in_app_purchase_android/billing_client_wrappers.dart';
 
-import '../../../in_app_purchase_offers.dart';
+import '../../in_app_purchase_offers.dart';
 
 extension SubscriptionOfferDetailsWrapperSerialization on SubscriptionOfferDetailsWrapper {
 
